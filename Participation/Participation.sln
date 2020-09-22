@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVExample", "CSVExample\CSVExample.csproj", "{86B34A73-52DD-4979-B2E3-043B6E526E89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF1", "WPF1\WPF1.csproj", "{83679809-5B33-4F88-A9E5-DE0212E70375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppClasses2", "WpfAppClasses2\WpfAppClasses2.csproj", "{1ADC5522-23D4-4D5E-B2B7-ED19386529F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{86B34A73-52DD-4979-B2E3-043B6E526E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86B34A73-52DD-4979-B2E3-043B6E526E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86B34A73-52DD-4979-B2E3-043B6E526E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83679809-5B33-4F88-A9E5-DE0212E70375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83679809-5B33-4F88-A9E5-DE0212E70375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83679809-5B33-4F88-A9E5-DE0212E70375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83679809-5B33-4F88-A9E5-DE0212E70375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADC5522-23D4-4D5E-B2B7-ED19386529F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADC5522-23D4-4D5E-B2B7-ED19386529F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADC5522-23D4-4D5E-B2B7-ED19386529F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADC5522-23D4-4D5E-B2B7-ED19386529F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
