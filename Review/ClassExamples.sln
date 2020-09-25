@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentUMLExample", "Studen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticipationEF", "ParticipationEF\ParticipationEF.csproj", "{C3A47EE7-C272-4D36-8DAA-7F67C57F7C60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{F4004143-FE3D-4A64-870E-D94B90424D75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C3A47EE7-C272-4D36-8DAA-7F67C57F7C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3A47EE7-C272-4D36-8DAA-7F67C57F7C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3A47EE7-C272-4D36-8DAA-7F67C57F7C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4004143-FE3D-4A64-870E-D94B90424D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4004143-FE3D-4A64-870E-D94B90424D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4004143-FE3D-4A64-870E-D94B90424D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4004143-FE3D-4A64-870E-D94B90424D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -38,7 +38,7 @@ namespace WpfAppClasses2
             }
             else 
             {
-                MessageBox.Show("Values for Manufactuer, Name, and/or Price were not correctly inputted.");
+                MessageBox.Show("Values for Manufacturer, Name, and/or Price were not correctly inputted.");
             }
         }
 
