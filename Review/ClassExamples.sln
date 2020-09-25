@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParticipationEF", "Particip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{F4004143-FE3D-4A64-870E-D94B90424D75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGET_Example", "NuGET_Example\NuGET_Example.csproj", "{35468BAA-C517-43E9-9CF1-7103A0C7A96E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F4004143-FE3D-4A64-870E-D94B90424D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4004143-FE3D-4A64-870E-D94B90424D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4004143-FE3D-4A64-870E-D94B90424D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
