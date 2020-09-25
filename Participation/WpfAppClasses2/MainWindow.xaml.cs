@@ -27,26 +27,33 @@ namespace WpfAppClasses2
 
         private void btnAddToy_Click(object sender, RoutedEventArgs e)
         {
-            if (txtManufacturer.Text != string.Empty && txtName.Text != string.Empty && txtPrice.Text != string.Empty)
+            //Adjusted code after reviewing previous lectures.
+            Toy toy1 = new Toy();
+            if (string.IsNullOrEmpty(txtManufacturer.Text) && string.IsNullOrEmpty(txtName.Text) && !int.TryParse(txtPrice.Text, out var value))
             {
-                Toy toy1 = new Toy();
+                MessageBox.Show("Please input data.");
+            }
+            else if(string.IsNullOrEmpty(txtManufacturer.Text) && string.IsNullOrEmpty(txtName.Text))
+            {
+                MessageBox.Show("One of the string values are null or empty.");
+            }
+            else if (!int.TryParse(txtPrice.Text, out var number))
+            {
+                MessageBox.Show("Price must be a whole number.");
+            }
+            else
+            {
                 toy1.Manufacturer = txtManufacturer.Text;
                 toy1.Name = txtName.Text;
                 toy1.Price = Convert.ToDouble(txtPrice.Text);
                 lstToys.Items.Add(toy1);
-
-            }
-            else 
-            {
-                MessageBox.Show("Values for Manufacturer, Name, and/or Price were not correctly inputted.");
             }
         }
-
+                
         private void lstToys_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Toy selectedToy = (Toy)lstToys.SelectedItem;
-            string aisle = selectedToy.GetAisle();
-            MessageBox.Show($"Aisle: {aisle}");
+            MessageBox.Show($"Aisle: {selectedToy.GetAisle()}");
         }
     }
 }
