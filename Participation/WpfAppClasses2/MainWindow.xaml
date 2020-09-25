@@ -13,11 +13,11 @@
         <TextBlock HorizontalAlignment="Left" Margin="91,62,0,0" TextWrapping="Wrap" Text="Manufacturer:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="131,89,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Cursor=""/>
         <TextBlock HorizontalAlignment="Left" Margin="137,118,0,0" TextWrapping="Wrap" Text="Price:" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtManufacturer" HorizontalAlignment="Left" Height="21" Margin="174,61,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="149"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="21" Margin="174,90,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="149"/>
-        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="21" Margin="174,118,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="txtManufacturer" HorizontalAlignment="Left" Height="21" Margin="174,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="21" Margin="174,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="21" Margin="174,118,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
         <Button x:Name="btnAddToy" Content="Add Toy" HorizontalAlignment="Left" Margin="480,82,0,0" VerticalAlignment="Top" Width="94" Height="29" Click="btnAddToy_Click"/>
-        <ListBox HorizontalAlignment="Left" Height="227" Margin="137,170,0,0" VerticalAlignment="Top" Width="592"/>
+        <ListBox x:Name="lstToys" HorizontalAlignment="Left" Height="227" Margin="91,167,0,0" VerticalAlignment="Top" Width="592" SelectionChanged="lstToys_SelectionChanged" />
 
     </Grid>
 </Window>

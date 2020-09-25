@@ -27,7 +27,26 @@ namespace WpfAppClasses2
 
         private void btnAddToy_Click(object sender, RoutedEventArgs e)
         {
+            if (txtManufacturer.Text != string.Empty && txtName.Text != string.Empty && txtPrice.Text != string.Empty)
+            {
+                Toy toy1 = new Toy();
+                toy1.Manufacturer = txtManufacturer.Text;
+                toy1.Name = txtName.Text;
+                toy1.Price = Convert.ToDouble(txtPrice.Text);
+                lstToys.Items.Add(toy1);
 
+            }
+            else 
+            {
+                MessageBox.Show("Values for Manufactuer, Name, and/or Price were not correctly inputted.");
+            }
+        }
+
+        private void lstToys_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Toy selectedToy = (Toy)lstToys.SelectedItem;
+            string aisle = selectedToy.GetAisle();
+            MessageBox.Show($"Aisle: {aisle}");
         }
     }
 }

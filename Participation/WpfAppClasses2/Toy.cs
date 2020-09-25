@@ -13,6 +13,7 @@ namespace WpfAppClasses2
         public string Manufacturer { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+        
         private string Aisle;
 
         /// <summary>
@@ -20,12 +21,16 @@ namespace WpfAppClasses2
         /// </summary>
         public Toy()
         {
-            Manufacturer = "manufacturer";
-            Name = "name";
+            Manufacturer = "";
+            Name = "";
             Price = 0.00;
-            Aisle = "A1";
+            Aisle = "";
         }
 
+        /// <summary>
+        /// Method to return Aisle number.
+        /// </summary>
+        /// <returns></returns>
         public string GetAisle()
         {
             string firstLetter;
@@ -35,12 +40,15 @@ namespace WpfAppClasses2
             aislenumber = aislenumber.Replace(",", "");
             aislenumber = aislenumber.Replace(".", "");
             aislenumber = aislenumber.Replace("$", "");
-            string aisle = $"{firstLetter.ToUpper()} - {aislenumber}";
-
-            return aisle;
+            Aisle = $"{firstLetter.ToUpper()}{aislenumber}";
+            return Aisle;
         }
 
-
+        public override string ToString()
+        {
+            string result = $"{Manufacturer} - {Name}";
+            return result;
+        }
 
     }
 }
