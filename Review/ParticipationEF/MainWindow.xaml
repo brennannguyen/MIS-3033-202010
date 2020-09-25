@@ -1,0 +1,24 @@
+﻿<Window x:Class="ParticipationEF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ParticipationEF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Background="#FF73CDB0">
+            <TextBlock HorizontalAlignment="Left" Margin="53,32,0,0" TextWrapping="Wrap" Text="Entry Form Participation" VerticalAlignment="Top" FontSize="22" FontFamily="Arial"/>
+            <TextBlock HorizontalAlignment="Left" Margin="53,93,0,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="53,139,0,0" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="53,188,0,0" TextWrapping="Wrap" Text="Zip Code:" VerticalAlignment="Top"/>
+            <Button x:Name="btnSend" Content="Send" HorizontalAlignment="Left" Height="33" Margin="156,286,0,0" VerticalAlignment="Top" Width="107" Click="btnSend_Click"/>
+            <ListBox x:Name="lstEntries" HorizontalAlignment="Left" Height="358" Margin="454,32,0,0" VerticalAlignment="Top" Width="278"/>
+            <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="124,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
+            <TextBox x:Name="txtAddress" HorizontalAlignment="Left" Height="26" Margin="124,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
+            <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Height="26" Margin="124,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="139"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
