@@ -5,16 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JSONPokemon"
         mc:Ignorable="d"
-        Title="Pokemon" Height="450" Width="800">
+        Title="Pokedex" Height="450" Width="800">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="https://cdn1.dotesports.com/wp-content/uploads/2019/11/18013809/SWSH-Background.jpg"/>
         </Grid.Background>
         <ComboBox x:Name="cboPokemons" HorizontalAlignment="Left" Margin="424,200,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboPokemons_SelectionChanged"/>
-        <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="123" Margin="196,100,0,0" VerticalAlignment="Top" Width="123"/>
+        <Image x:Name="imgPokemon" HorizontalAlignment="Left" Height="123" Margin="215,119,0,0" VerticalAlignment="Top" Width="123"/>
         <Label x:Name="pokemonHeight" Content="" HorizontalAlignment="Left" Height="40" Margin="215,254,0,0" VerticalAlignment="Top" Width="86" Foreground="White" FontWeight="Bold" FontFamily="Arial"/>
         <Label x:Name="pokemonWeight" Content="" HorizontalAlignment="Left" Height="40" Margin="215,283,0,0" VerticalAlignment="Top" Width="86" Foreground="White" FontWeight="Bold" FontFamily="Arial"/>
-        <Label Content="Select a pokemon:" HorizontalAlignment="Left" Height="34" Margin="418,176,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontFamily="Arial"/>
+        <Label Content="Select a Pokemon:" HorizontalAlignment="Left" Height="34" Margin="418,176,0,0" VerticalAlignment="Top" Width="145" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontFamily="Arial"/>
+        <RadioButton x:Name="rbFront" Content="Front" HorizontalAlignment="Left" Height="17" Margin="424,261,0,0" VerticalAlignment="Top" Width="106" FontFamily="Arial" Foreground="White" Background="White" Checked="rbFront_Checked" />
+        <RadioButton x:Name="rbBack" Content="Back" HorizontalAlignment="Left" Height="17" Margin="424,284,0,0" VerticalAlignment="Top" Width="106" FontFamily="Arial" Foreground="White" Checked="rbBack_Checked" />
 
     </Grid>
 </Window>

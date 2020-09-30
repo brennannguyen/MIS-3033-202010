@@ -1,11 +1,13 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Drawing;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -45,9 +47,8 @@ namespace JSONPokemon
             {
                 cboPokemons.Items.Add(poke);
             }
-            //Need event for selection changed and 
         }
-
+        public PokemonInfo pokemoninfoAPI;
         private void cboPokemons_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             PokemonResults selectedPokemon = (PokemonResults)cboPokemons.SelectedItem;
@@ -58,12 +59,36 @@ namespace JSONPokemon
                 string jsondetails = client.GetStringAsync(pokemonurl).Result;
                 pokemoninfoAPI = JsonConvert.DeserializeObject<PokemonInfo>(jsondetails);
             }
-            var pokemonimage = pokemoninfoAPI.images;
-            Uri uri = new Uri(pokemonimage.front_default);
-            var img = new BitmapImage(uri);
-            imgPokemon.Source = img;
+
+            imgPokemon.Source = new BitmapImage(new Uri(pokemoninfoAPI.sprites.front_default));
             pokemonHeight.Content = $"Height: {pokemoninfoAPI.height}";
             pokemonWeight.Content = $"Weight: {pokemoninfoAPI.weight}";
+        }
+
+        private void rbBack_Checked(object sender, RoutedEventArgs e)
+        {
+            PokemonResults selectedPokemon = (PokemonResults)cboPokemons.SelectedItem;
+            PokemonInfo pokemoninfoAPI;
+            string pokemonurl = selectedPokemon.url;
+            using (var client = new HttpClient())
+            {
+                string jsondetails = client.GetStringAsync(pokemonurl).Result;
+                pokemoninfoAPI = JsonConvert.DeserializeObject<PokemonInfo>(jsondetails);
+            }
+            imgPokemon.Source = new BitmapImage(new Uri(pokemoninfoAPI.sprites.back_default));
+        }
+
+        private void rbFront_Checked(object sender, RoutedEventArgs e)
+        {
+            PokemonResults selectedPokemon = (PokemonResults)cboPokemons.SelectedItem;
+            PokemonInfo pokemoninfoAPI;
+            string pokemonurl = selectedPokemon.url;
+            using (var client = new HttpClient())
+            {
+                string jsondetails = client.GetStringAsync(pokemonurl).Result;
+                pokemoninfoAPI = JsonConvert.DeserializeObject<PokemonInfo>(jsondetails);
+            }
+            imgPokemon.Source = new BitmapImage(new Uri(pokemoninfoAPI.sprites.front_default));
         }
     }
 }
