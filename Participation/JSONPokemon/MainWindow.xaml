@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JSONPokemon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pokemon" Height="450" Width="800">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="https://cdn1.dotesports.com/wp-content/uploads/2019/11/18013809/SWSH-Background.jpg"/>

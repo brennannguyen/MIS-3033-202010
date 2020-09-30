@@ -58,10 +58,10 @@ namespace JSONPokemon
                 string jsondetails = client.GetStringAsync(pokemonurl).Result;
                 pokemoninfoAPI = JsonConvert.DeserializeObject<PokemonInfo>(jsondetails);
             }
-            //var pokemonimage = pokemoninfoAPI.images;
-            //var uri = new Uri(pokemonimage.front_default);
-            //var img = new BitmapImage(uri);
-            //imgPokemon.Source = img;
+            var pokemonimage = pokemoninfoAPI.images;
+            Uri uri = new Uri(pokemonimage.front_default);
+            var img = new BitmapImage(uri);
+            imgPokemon.Source = img;
             pokemonHeight.Content = $"Height: {pokemoninfoAPI.height}";
             pokemonWeight.Content = $"Weight: {pokemoninfoAPI.weight}";
         }
