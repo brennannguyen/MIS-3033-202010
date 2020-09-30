@@ -48,7 +48,7 @@ namespace JSONPokemon
             //Need event for selection changed and 
         }
 
-        private void cboPokemons_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void cboPokemons_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             PokemonResults selectedPokemon = (PokemonResults)cboPokemons.SelectedItem;
             PokemonInfo pokemoninfoAPI;
@@ -58,13 +58,12 @@ namespace JSONPokemon
                 string jsondetails = client.GetStringAsync(pokemonurl).Result;
                 pokemoninfoAPI = JsonConvert.DeserializeObject<PokemonInfo>(jsondetails);
             }
-
-            foreach (var info in pokemoninfoAPI.images)
-            {
-                
-            }
-
-
+            //var pokemonimage = pokemoninfoAPI.images;
+            //var uri = new Uri(pokemonimage.front_default);
+            //var img = new BitmapImage(uri);
+            //imgPokemon.Source = img;
+            pokemonHeight.Content = $"Height: {pokemoninfoAPI.height}";
+            pokemonWeight.Content = $"Weight: {pokemoninfoAPI.weight}";
         }
     }
 }

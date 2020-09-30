@@ -10,7 +10,7 @@ namespace JSONPokemon
     {
         public int height { get; set; }
         public int weight { get; set; }
-        public List<sprites> images { get; set; }
+        public sprites images { get; set; }
     }
     public class sprites
     {
