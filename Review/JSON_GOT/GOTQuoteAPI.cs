@@ -10,5 +10,6 @@ namespace JSON_GOT
     {
         public string quote { get; set; }
         public string character { get; set; }
+
     }
 }
