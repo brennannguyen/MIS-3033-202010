@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGET_Example", "NuGET_Example\NuGET_Example.csproj", "{35468BAA-C517-43E9-9CF1-7103A0C7A96E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_GOT", "JSON_GOT\JSON_GOT.csproj", "{5B48B43C-283C-4363-8937-80CBFD446DAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35468BAA-C517-43E9-9CF1-7103A0C7A96E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
