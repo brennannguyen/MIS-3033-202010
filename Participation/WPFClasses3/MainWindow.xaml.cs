@@ -39,14 +39,11 @@ namespace WPFClasses3
         private void lstStudents_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Student selectedStudent = (Student)lstStudents.SelectedItem;
-            StudentInfoWindow infoWindow = new StudentInfoWindow();
-            //infoWindow.Setup(selectedStudent);
-            //infoWindow.Show();
-        }
 
-        public void Setup()
-        {
-            
+            StudentInfoWindow infoWindow = new StudentInfoWindow();
+            infoWindow.student = selectedStudent;
+            infoWindow.Setup();
+            infoWindow.ShowDialog();
         }
     }
 }

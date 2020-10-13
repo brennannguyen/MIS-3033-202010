@@ -19,12 +19,15 @@ namespace WPFClasses3
     /// </summary>
     public partial class StudentInfoWindow : Window
     {
+        public Student student { get; set; }
         public StudentInfoWindow()
         {
             InitializeComponent();
-            Student student = new Student();
-            lblName.Content = $"{student.FirstName} {student.LastName}";
-            
+        }
+
+        public void Setup()
+        {
+            lblName.Content = $"{student1.FirstName} {student1.LastName}";
         }
     }
 }
