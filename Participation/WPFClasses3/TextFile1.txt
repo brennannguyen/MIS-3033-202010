@@ -1,0 +1,6 @@
+﻿Create a WPF app that follows the following classes.  
+Allow the user to fill out a form to enter in all the information.  
+Create the instance of the Student and add it to a listbox on the form.  
+When the user double clicks on the Student, open up a NEW form (you will have to create this yourself) 
+and display the selected Students Address information 
+with the student's First Name / Last Name in text at the top of the form
