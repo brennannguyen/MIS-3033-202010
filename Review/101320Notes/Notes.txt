@@ -1,0 +1,41 @@
+﻿Rick and Morty ICA WPF
+	When creating a new window: Paste elements from previous window to new window.
+	
+	In the code of the new window update the source of the img and update the content of the label.
+	Use a method to accomplish this.
+
+	You can make a public reference to the class at the top of mainwindows.cs
+	
+	public Character character { get; set; } *at the top
+	
+	or
+	
+	public void Setup(Character c)
+	{
+	
+	}
+
+	code example
+	public void Setup(Character c)
+	{
+		character = c;
+
+		Uri uri = new Uri(character.image);
+
+	}
+
+	Put code in the selection changed event
+	
+	Using a method to pass in the value
+		creates an instance of the new window in the old window
+		CharacterInfoWindow infoWindow = new CharacterInfoWindow();
+		infoWindow.Setup(selectedCharacter);
+		infoWindow.Show();
+
+	public void Setup()
+	{
+		Character selectedCharacter = (Character)cboCharacters.SelectedItem;
+		CharacterInfoWindow infoWindow = new CharacterInfoWindow();
+
+	}
+		

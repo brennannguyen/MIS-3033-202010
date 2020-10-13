@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGET_Example", "NuGET_Exam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON_GOT", "JSON_GOT\JSON_GOT.csproj", "{5B48B43C-283C-4363-8937-80CBFD446DAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "101320Notes", "101320Notes\101320Notes.csproj", "{D9E4258E-AAD5-4B63-B03C-8DF3486D68CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B48B43C-283C-4363-8937-80CBFD446DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E4258E-AAD5-4B63-B03C-8DF3486D68CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E4258E-AAD5-4B63-B03C-8DF3486D68CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E4258E-AAD5-4B63-B03C-8DF3486D68CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E4258E-AAD5-4B63-B03C-8DF3486D68CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
