@@ -22,6 +22,8 @@ namespace WPFClasses3
         public StudentInfoWindow()
         {
             InitializeComponent();
+            Student student = new Student();
+            lblName.Content = $"{student.FirstName} {student.LastName}";
             
         }
     }
